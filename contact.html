@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, inital-scale=1" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-links"><a href="index.html"> Home </a></div>
+          <div class="nav-links"><a href="aboutme.html"> About Me </a></div>
+          <div class="nav-links active-nav-link">
+            <a href="contact.html"> Contact </a>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="name">Mikayla Hutchinson</div>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <h1>Contact Me</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="contact.html" method="post">
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your name"
+          />
+          <input
+            type="email"
+            class="contact-form-text"
+            placeholder="Your email"
+          />
+          <input
+            type="tel"
+            class="contact-form-text"
+            placeholder="Your phone"
+          />
+          <textarea
+            class="contact-form-text"
+            placeholder="Your message"
+          ></textarea>
+          <input type="submit" class="contact-form-btn" value="send" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

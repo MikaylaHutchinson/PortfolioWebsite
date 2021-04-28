@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="..\style.css" />
+  </head>
+
+  <div class="nav-wrapper">
+    <div class="left-side">
+      <div class="nav-links"><a href="..\index.html"> Home </a></div>
+      <div class="nav-links"><a href="..\aboutme.html"> About Me </a></div>
+      <div class="nav-links"><a href="..\contact.html"> Contact </a></div>
+    </div>
+    <div class="right-side">
+      <div class="name">Mikayla Hutchinson</div>
+    </div>
+  </div>
+
+  <body id="bmi-background">
+    <div class="container">
+      <div class="bmi-heading">
+        <h1>BMI Calculator</h1>
+      </div>
+      <div id="unit-btns">
+        <button
+          class="imperial-btn"
+          onclick="imperialselect()"
+          type="button"
+          name="imp-btn"
+        >
+          Imperial
+        </button>
+
+        <button
+          class="metric-btn"
+          type="submit"
+          onclick="metricselect()"
+          name="mtc-btn"
+        >
+          Metric
+        </button>
+      </div>
+
+      <form class="bmi-form" id="imperial-inputs">
+        <label for="height" class="bmi-form-label">Height: </label>
+        <input
+          class="height-input"
+          type="number"
+          id="height-imp-ft"
+          min="1"
+          max="9"
+          required
+        />
+        ft
+        <input
+          class="height-input"
+          type="number"
+          id="height-imp-in"
+          min="1"
+          max="11"
+          required
+        />
+        in
+        <br />
+        <label for="weight" class="bmi-form-label">Weight: </label>
+        <input
+          class="weight-input"
+          type="number"
+          id="weight-imp"
+          min="1"
+          max="600"
+          required
+        />
+        lbs <br />
+        <input
+          class="bmi-calculate-btn"
+          onclick="imperialcalculate(); return false;"
+          type="submit"
+          value="Calculate"
+        />
+      </form>
+      <form class="bmi-form" id="metric-inputs">
+        <label for="height" class="bmi-form-label">Height: </label>
+        <input
+          class="height-input"
+          type="number"
+          id="height-metric"
+          min="1"
+          max="300"
+          required
+        />
+        cm
+        <br />
+        <label for="weight" class="bmi-form-label">Weight: </label>
+        <input
+          class="weight-input"
+          type="number"
+          id="weight-metric"
+          min="1"
+          max="500"
+          required
+        />
+        kg <br />
+        <input
+          class="bmi-calculate-btn"
+          type="submit"
+          onclick="metriccalculate(); return false;"
+          value="Calculate"
+        />
+      </form>
+      <div id="bmi-result">
+        <p>Your BMI is:</p>
+        <p id="bmi"></p>
+      </div>
+    </div>
+    <script src="..\main.js"></script>
+  </body>
+</html>
