@@ -124,15 +124,24 @@ body {
 
 .profile-content-wrapper {
   padding: 30px;
-  margin-top: 30px;
-}
-
-.profile-content-wrapper p {
   margin-top: 50px;
+  margin-left: 30px;
 }
 
 .profile-content-wrapper h1 {
-  color: #22a6b3;
+  font-family: "sansita", sans-serif;
+  font-size: 36;
+  color: #fc427b;
+}
+
+.profile-content-wrapper p {
+  font-family: "sansita", serif;
+  font-size: 20px;
+  text-align: justify;
+  width: 550px;
+  margin-top: 80px;
+  line-height: 2;
+  color: #fd81a7;
 }
 
 /* contact styles */
