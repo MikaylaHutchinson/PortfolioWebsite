@@ -427,7 +427,7 @@ a {
 .winning-message {
   display: none;
   position: fixed;
-  top: 0;
+  top: 500;
   left: 0;
   bottom: 0;
   right: 0;
