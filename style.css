@@ -474,6 +474,106 @@ a {
   font-size: 30px;
 }
 
+.calculator{
+  width: 320px;
+  height: 500px;
+  background-color: #f5f5f5;
+  font-family: 'rubik', sans-serif;
+  margin: 0 auto;
+  margin-top: 20px;
+  top: 10px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.calc-screen {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px 10px 0 0 ;
+}
+
+.calc-history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 5px;
+  font-size: 15px;
+  color: rgb(197, 195, 195);
+}
+
+.calc-output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.calc-keyboard {
+  height: 400px;
+}
+
+.calc-keyboard > button {
+  font-family: 'rubik', sans-serif;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+  outline: 0;
+}
+
+.calc-number, .empty {
+  background-color: #f5f5f5;
+}
+
+
+.calc-number, .calc-operator, .calc-extra {
+  cursor: pointer;
+}
+
+.calc-keyboard > button:nth-child(4) {
+  font-size: 20px;
+  background-color: tomato;
+}
+
+.calc-keyboard > button:nth-child(8) {
+  font-size: 18px;
+  background-color: gold;
+}
+
+.calc-keyboard > button:nth-child(12) {
+  font-size: 18px;
+  background-color: yellow;
+}
+
+
+.calc-keyboard > button:nth-child(16) {
+  font-size: 18px;
+  background-color: greenyellow;
+}
+
+.calc-keyboard > button:nth-child(20) {
+  font-size: 18px;
+  background-color: aqua;
+}
+
+.calc-keyboard > button:nth-child(1),
+.calc-keyboard > button:nth-child(2),
+.calc-keyboard > button:nth-child(3) {
+  font-size: 18px;
+  background-color: #E5E4E2;
+}
+
+.calc-keyboard > button:active {
+  font-size: 13px;
+}
+
+
 /* hangman */
 
 .hangman-heading {
