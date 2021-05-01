@@ -36,33 +36,33 @@
         <div class="calculator">
           <div class="calc-screen">
             <div class="calc-history">
-              <p id='calc-history'>25</p>
+              <p id='calc-history'></p>
             </div>
             <div class="calc-output">
-              <p id='calc-output'>9*9</p>
+              <p id='calc-output'></p>
             </div>
           </div>
           <div class="calc-keyboard">
-            <button class="calc-extra">AC</button>
-            <button class="calc-extra">.</button>
-            <button class="calc-extra">%</button>
-            <button class="calc-operator">÷</button>
-            <button class="calc-number">7</button>
-            <button class="calc-number">8</button>
-            <button class="calc-number">9</button>
-            <button class="calc-operator">×</button>
-            <button class="calc-number">4</button>
-            <button class="calc-number">5</button>
-            <button class="calc-number">6</button>
-            <button class="calc-operator">-</button>
-            <button class="calc-number">1</button>
-            <button class="calc-number">2</button>
-            <button class="calc-number">3</button>
-            <button class="calc-operator">+</button>
-            <button class="empty"></button>
-            <button class="calc-number">0</button>
-            <button class="empty"></button>
-            <button class="calc-operator">=</button>
+            <button class="calc-extra" id='ac'>AC</button>
+            <button class="calc-extra" id='C'>C</button>
+            <button class="calc-extra" id='del'>DEL</button>
+            <button class="calc-operator" id='÷'>÷</button>
+            <button class="calc-number" id='7'>7</button>
+            <button class="calc-number" id='8'>8</button>
+            <button class="calc-number" id='9'>9</button>
+            <button class="calc-operator" id='×'>×</button>
+            <button class="calc-number" id='4'>4</button>
+            <button class="calc-number" id='5'>5</button>
+            <button class="calc-number" id='6'>6</button>
+            <button class="calc-operator" id='-'>-</button>
+            <button class="calc-number" id='1'>1</button>
+            <button class="calc-number" id='2'>2</button>
+            <button class="calc-number" id='3'>3</button>
+            <button class="calc-operator" id='+'>+</button>
+            <button class="calc-number" id='.'>.</button>
+            <button class="calc-number" id='0'>0</button>
+            <button class="calc-operator" id='%'>%</button>
+            <button class="calc-equal-sign" id='='>=</button>
           </div>
         </div>
       </div>
@@ -70,32 +70,147 @@
   </body>
 
   <script>
-    function getHistory() {
-      return document.getElementById('calc-history').innerText;
-    }
-
-    function printHistory(num) {
-      document.getElementById('calc-history').innerText=num;
-    }
-
-    function getOutput() {
-      return document.getElementById('calc-output').innerText;
-    }
-
-    function printOutput(num) {
-      if(num==''){
-        document.getElementById('calc-output').innerText=num;
+    class Calculator {
+      constructor(previousText, currentText) {
+        this.previousText=previousText
+        this.currentText=currentText
+        this.allClear()
       }
-      else{
-        document.getElementById('calc-output').innerText=getFormattedNumber(num);}
+    
+
+    allClear() {
+      this.previous=''
+      this.current=''
+      this.operation= undefined
     }
 
-    function getFormattedNumber(num) {
-      var n=Number(num);
-      var value=n.toLocaleString('en');
-      return value;
+    clear() {
+      this.current=''
+      this.operation=undefined
     }
 
-    printOutput(2045)
+
+    delete() {
+      this.current=this.current.toString().slice(0,-1)
+    }
+
+    appendNumber(number) {
+      if(number==='.'&& this.current.includes('.')) return
+      this.current=this.current.toString()+number.toString()
+    }
+
+    chooseOperation(operation) {
+      if(this.current==='') return
+      if(this.previous!==''){
+        this.compute()
+      }
+      this.operation=operation
+      this.previous=this.current
+      this.current=''
+    }
+
+    compute() {
+      let computation
+      const prev=parseFloat(this.previous)
+      const curr=parseFloat(this.current)
+      if (isNaN(prev) || isNaN(curr)) return
+      switch (this.operation) {
+        case '+':
+          computation = prev + curr
+          break
+        case '-':
+          computation = prev - curr
+          break
+        case '×':
+          computation = prev * curr
+          break
+        case '÷':
+          computation = prev / curr
+          break 
+        default:
+          return
+      }
+      this.current=computation
+      this.operation=undefined
+      this.previous='' 
+    }
+
+    getDisplayNumber(number) {
+      const stringNumber = number.toString()
+      const integerDigits=parseFloat(stringNumber.split('.')[0])
+      const decimalDigits=stringNumber.split('.')[1]
+      let integerDisplay
+      if (isNaN(integerDigits)) {
+        integerDisplay=''
+      }else {
+        integerDisplay=integerDigits.toLocaleString('en',{
+          maximumFractionDigits:0 })
+      }
+      if (decimalDigits !=null) {
+        return `${integerDisplay}.${decimalDigits}`
+      } else { 
+        return integerDisplay
+      }
+    }
+
+
+    updateDisplay() {
+      this.currentText.innerText=this.getDisplayNumber(this.current)
+      if (this.operation !=null) {
+      this.previousText.innerText= `${this.previous} ${this.operation}`
+      } else {
+        this.previousText.innerText=''
+      }
+    }
+
+    }
+
+
+    const numberButtons=document.querySelectorAll('.calc-number')
+    const operators=document.querySelectorAll('.calc-operator')
+    const equalsButton=document.querySelector('.calc-equal-sign')
+    const del=document.getElementById('del')
+    const ac=document.getElementById('ac')
+    const clear=document.getElementById('C')
+    const previousText=document.querySelector('.calc-history')
+    const currentText=document.querySelector('.calc-output')
+
+    const calculator=new Calculator(previousText,currentText)
+
+    numberButtons.forEach(button => {
+      button.addEventListener('click', ()=> {
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
+      })
+    });
+
+    operators.forEach(button => {
+      button.addEventListener('click', ()=> {
+        calculator.chooseOperation(button.innerText)
+        calculator.updateDisplay()
+      })
+    });
+
+    equalsButton.addEventListener('click', button => {
+      calculator.compute()
+      calculator.updateDisplay()
+    })
+
+    ac.addEventListener('click', button => {
+      calculator.allClear()
+      calculator.updateDisplay()
+    })
+
+    clear.addEventListener('click', button => {
+      calculator.clear()
+      calculator.updateDisplay()
+    })
+
+    del.addEventListener('click', button => {
+      calculator.delete()
+      calculator.updateDisplay()
+    })
+
+
   </script>
 </html>

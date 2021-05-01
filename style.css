@@ -527,12 +527,8 @@ a {
   outline: 0;
 }
 
-.calc-number, .empty {
+.calc-keyboard > button {
   background-color: #f5f5f5;
-}
-
-
-.calc-number, .calc-operator, .calc-extra {
   cursor: pointer;
 }
 
