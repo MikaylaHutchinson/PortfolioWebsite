@@ -495,9 +495,10 @@ a {
 
 .calc-history {
   text-align: right;
-  height: 20px;
+  height: 15px;
   margin: 0 20px;
   padding-top: 5px;
+  padding-bottom: -5px;
   font-size: 15px;
   color: rgb(197, 195, 195);
 }

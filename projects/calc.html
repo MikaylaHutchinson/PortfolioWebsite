@@ -36,10 +36,10 @@
         <div class="calculator">
           <div class="calc-screen">
             <div class="calc-history">
-              <p id='calc-history'></p>
+              <p id='calc-history'>56</p>
             </div>
             <div class="calc-output">
-              <p id='calc-output'></p>
+              <p id='calc-output'>90+75</p>
             </div>
           </div>
           <div class="calc-keyboard">
@@ -172,8 +172,8 @@
     const del=document.getElementById('del')
     const ac=document.getElementById('ac')
     const clear=document.getElementById('C')
-    const previousText=document.querySelector('.calc-history')
-    const currentText=document.querySelector('.calc-output')
+    const previousText=document.querySelector('#calc-history')
+    const currentText=document.querySelector('#calc-output')
 
     const calculator=new Calculator(previousText,currentText)
 
