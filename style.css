@@ -615,7 +615,7 @@ a {
 }
 
 .snake-restart {
-  display: flex;
+  display: none;
   position: fixed;
   top: 99px;
   left: 0;

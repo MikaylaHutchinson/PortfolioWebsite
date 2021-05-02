@@ -53,7 +53,7 @@
     </div>
   </body>
 
-  
+
   <script type='module'>
     
     import {update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
@@ -64,14 +64,20 @@
     let lastRenderTime=0
     let gameOver=false
     const gameBoard=document.getElementById('game-board')
+    const restartMessage=document.getElementsByClassName('snake-restart')[0]
+    const score= document.getElementById('score')
+    const highscore=document.getElementById('highscore')
+    const restartBtn=document.getElementById('snake-restart-btn')
+
+    restartBtn.addEventListener('click', () => {
+      restartMessage.style.display='none'
+      window.location='/'
+    })
+
 
     function main(currentTime) {
       if (gameOver) {
-        if (confirm('you lost. Press ok to restart.')) {
-          window.location= '/'
-        }
-        return
-      }
+        restartMessage.style.display='flex'
 
 
       window.requestAnimationFrame(main)
@@ -88,7 +94,7 @@
     window.requestAnimationFrame(main)
 
     
-    function update( ) {
+    function update() {
       updateSnake()
       updateFood()
       checkDeath()
