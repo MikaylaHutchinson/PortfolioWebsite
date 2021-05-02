@@ -615,7 +615,7 @@ a {
   font-family: 'roboto condensed', sans-serif;
   position: absolute;
   top: 400px;
-  left: 100px;
+  left: 150px;
   font-size: 20px;
 }
 
@@ -623,9 +623,9 @@ a {
   font-family: 'roboto condensed', sans-serif;
   font-size: 20px;
   position: absolute;
-  top: 400px;
-  right: 100px;
-  background-color: pink;
+  top: 350px;
+  right: 200px;
+  background-color: palegreen;
 }
 
 .snake-restart {
