@@ -61,7 +61,7 @@
 
   <script type='module'>
     
-    import {update as updateSnake, draw as drawSnake, restart as restartSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
+    import {update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
     import {update as updateFood, draw as drawFood} from './snake-external-JS/food.js'
     import {outsideGrid} from './snake-external-JS/grid.js'
     
@@ -82,7 +82,7 @@
 
     function main(currentTime) {
       if (gameOver) {
-        score.innerText='Score:  5'
+        score.innerText='Score:  '+document.getElementById('scoreboard-score').innerText
         highscore.innerText='High Score:  10'
         restartMessage.style.display='flex'
         return
@@ -120,7 +120,12 @@
     }
 
     function restart() {
-      restartSnake()
+      var restartRequest = new XMLHttpRequest() ;
+      restartRequest.onreadystatechange = function() {
+        if (this.readyState = 4 && this.status == 200) {
+
+        }
+      }
     }
 
 

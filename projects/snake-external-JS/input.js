@@ -27,6 +27,3 @@ export function getInputDirection() {
   return inputDirection
 }
 
-export function restart() {
-  inputDirection = {x:0, y:0}
-}

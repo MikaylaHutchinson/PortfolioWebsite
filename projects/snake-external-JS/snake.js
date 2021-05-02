@@ -1,4 +1,4 @@
-import {getInputDirection, restart as restartInput} from './input.js'
+import {getInputDirection} from './input.js'
 
 export const snakeSpeed=5
 const snakeBody= [{ x: 11, y: 11}]
@@ -57,8 +57,3 @@ function addSegments() {
   newSegments=0
 }
 
-export function restart() {
-  const gameBoard=document.getElementById('game-board')
-  restartInput()
-  draw(gameBoard)
-}
