@@ -668,7 +668,7 @@ a {
 }
 
 .snake-restart button:hover {
-  background-color: rgb(40, 216, 207);
+  background-color: indianred;
 }
 
 /* hangman */

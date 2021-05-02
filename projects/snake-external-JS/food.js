@@ -1,5 +1,6 @@
 import {onSnake, expandSnake} from './snake.js'
 import {randomGridPosition} from './grid.js'
+import { restart } from './input.js'
 
 let scoreCount=0
 let highscoreCount=0
@@ -34,4 +35,9 @@ function getRandomFoodPosition() {
         newFoodPosition=randomGridPosition()
     }
     return newFoodPosition
+}
+
+export function restart () {
+    food=randomGridPosition()
+    scoreCount=0
 }
