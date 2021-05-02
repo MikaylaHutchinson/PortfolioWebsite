@@ -40,8 +40,8 @@
     </div>
 
     <div class='snake-scoreboard'>
-      <div class="scoreboard-score">Score: <p id=scoreboard-score></p></div>
-      <div class="scoreboard-highscore">High Score: <p id=scoreboard-highscore></p></div>
+      <div class="scoreboard-score"><p id=scoreboard-score></p></div>
+      <div class="scoreboard-highscore"><p id=scoreboard-highscore></p></div>
     </div>
 
     <div class="snake-start-directions">
@@ -62,7 +62,7 @@
   <script type='module'>
     
     import {update as updateSnake, draw as drawSnake, restart as restartSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
-    import {update as updateFood, draw as drawFood} from './snake-external-JS/food.js'
+    import {update as updateFood, draw as drawFood, restart as restartScore} from './snake-external-JS/food.js'
     import {outsideGrid} from './snake-external-JS/grid.js'
     
 
@@ -122,8 +122,8 @@
 
     function restart() {
       restartSnake()
+      restartScore()
       gameOver=false
-      document.getElementById('scoreboard-score').innerText=0
       window.requestAnimationFrame(main)
     }
 

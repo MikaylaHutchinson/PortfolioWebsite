@@ -13,10 +13,10 @@ export function update() {
         expandSnake(expansionRate)
         food=getRandomFoodPosition()
         scoreCount+=1
-        document.getElementById('scoreboard-score').innerText=scoreCount
+        document.getElementById('scoreboard-score').innerText='Score:  '+scoreCount.toString()
         if (scoreCount>highscoreCount) {
             highscoreCount+=1
-            document.getElementById('scoreboard-highscore').innerText=highscoreCount
+            document.getElementById('scoreboard-highscore').innerText='High Score:  '+highscoreCount.toString()
         }
     }
   }
@@ -38,6 +38,5 @@ function getRandomFoodPosition() {
 }
 
 export function restart () {
-    food=randomGridPosition()
     scoreCount=0
 }
