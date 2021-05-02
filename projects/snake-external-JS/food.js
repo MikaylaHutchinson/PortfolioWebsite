@@ -14,10 +14,10 @@ export function update() {
         scoreCount+=1
         if (scoreCount>highscoreCount) {
             highscoreCount+=1
-            document.getElementById('scoreboard-highscore').innerText='High Score:  '+highscoreCount.toString()
         }
     }
     document.getElementById('scoreboard-score').innerText='Score:  '+scoreCount.toString()
+    document.getElementById('scoreboard-highscore').innerText='High Score:  '+highscoreCount.toString()
 }
   
 export function draw(gameBoard) {
