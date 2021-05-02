@@ -76,7 +76,8 @@
 
     restartBtn.addEventListener('click', () => {
       restartMessage.style.display='none'
-      window.requestAnimationFrame(main)
+      update()
+      draw()
     })
 
 
