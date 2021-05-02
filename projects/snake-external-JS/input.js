@@ -24,9 +24,9 @@ let inputDirection = {x:0, y:0}
     
     
 
-    export function getInputDirection() {
-      lastInputDirection=inputDirection
-      return inputDirection
-    }
-    
+export function getInputDirection() {
+  lastInputDirection=inputDirection
+  return inputDirection
+}
+
   
