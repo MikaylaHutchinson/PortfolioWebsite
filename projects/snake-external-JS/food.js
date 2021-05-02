@@ -2,6 +2,7 @@ import {onSnake, expandSnake} from './snake.js'
 import {randomGridPosition} from './grid.js'
 
 let scoreCount=0
+let highscoreCount=0
 let food=getRandomFoodPosition()
 const expansionRate=1
 
@@ -11,6 +12,7 @@ export function update() {
         expandSnake(expansionRate)
         food=getRandomFoodPosition()
         scoreCount+=1
+        document.getElementById('scoreboard-score').innerText=scoreCount
     }
   }
   
