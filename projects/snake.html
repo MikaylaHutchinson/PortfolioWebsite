@@ -61,7 +61,7 @@
 
   <script type='module'>
     
-    import {update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
+    import {update as updateSnake, draw as drawSnake, restart as restartSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
     import {update as updateFood, draw as drawFood} from './snake-external-JS/food.js'
     import {outsideGrid} from './snake-external-JS/grid.js'
     
@@ -120,14 +120,7 @@
     }
 
     function restart() {
-      var restartRequest = new XMLHttpRequest() ;
-      restartRequest.onreadystatechange = function() {
-        if (this.readyState = 4 && this.status == 200) {
-          gameBoard=this.response
-        }
-      }
-      restartRequest.open('GET', 'https://mikaylahutchinson.github.io/PortfolioWebsite/projects/snake.html', true)
-      restartRequest.send()
+      restartSnake()
     }
 
 

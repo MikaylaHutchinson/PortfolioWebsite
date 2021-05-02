@@ -57,3 +57,8 @@ function addSegments() {
   newSegments=0
 }
 
+export function restart() {
+  snakeBody[0].x=11
+  snakeBody[0].y=11
+  snakeBody.splice(1)
+}

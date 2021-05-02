@@ -625,7 +625,7 @@ a {
   position: absolute;
   top: 350px;
   right: 300px;
-  background-color: yellowgreen;
+  background-color: gray;
 }
 
 .snake-restart {
