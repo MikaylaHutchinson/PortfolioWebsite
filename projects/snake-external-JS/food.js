@@ -14,6 +14,7 @@ export function update() {
         scoreCount+=1
         document.getElementById('scoreboard-score').innerText=scoreCount
         if (scoreCount>highscoreCount) {
+            highscoreCount+=1
             document.getElementById('scoreboard-highscore').innerText=highscoreCount
         }
     }

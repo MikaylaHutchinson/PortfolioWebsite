@@ -1,4 +1,4 @@
-import {getInputDirection} from './input.js'
+import {getInputDirection, restart as restartInput} from './input.js'
 
 export const snakeSpeed=5
 const snakeBody= [{ x: 11, y: 11}]
@@ -61,4 +61,5 @@ export function restart() {
   snakeBody[0].x=11
   snakeBody[0].y=11
   snakeBody.splice(1)
+  restartInput()
 }
