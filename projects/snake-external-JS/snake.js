@@ -58,7 +58,6 @@ function addSegments() {
 }
 
 export function restart() {
-  snakeBody= [{ x: 11, y: 11}]
   inputDirection = {x:0, y:0}
   draw(gameBoard)
 }
