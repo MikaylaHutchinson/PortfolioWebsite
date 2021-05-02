@@ -622,9 +622,9 @@ a {
 .snake-scoreboard {
   font-family: 'roboto condensed', sans-serif;
   font-size: 20px;
-  position: absolute;
-  top: 50px;
-  right: 50px;
+  position: relative;
+  top: -200px;
+  right: -250px;
 }
 
 .snake-restart {
