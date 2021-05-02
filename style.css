@@ -617,6 +617,7 @@ a {
 
 .snake-restart {
   font-family: 'krona one', sans-serif;
+  display: flex;
   position: fixed;
   top: 99px;
   left: 0;
