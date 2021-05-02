@@ -58,6 +58,6 @@ function addSegments() {
 }
 
 export function restart() {
-  inputDirection = {x:0, y:0}
+  restartInput()
   draw(gameBoard)
 }
