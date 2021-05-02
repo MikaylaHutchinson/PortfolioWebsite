@@ -614,9 +614,7 @@ a {
 
 }
 
-
 .snake-restart {
-  font-family: 'krona one', sans-serif;
   display: flex;
   position: fixed;
   top: 99px;
@@ -626,9 +624,13 @@ a {
   background-color: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
-  color: white;
   font-size: 5rem;
   flex-direction: column;
+}
+
+.lost-message {
+  color: white;
+  font-family: 'krona one', sans-serif;
 }
 
 .snake-restart button {
