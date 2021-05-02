@@ -123,6 +123,7 @@
     function restart() {
       restartSnake()
       gameOver=false
+      document.getElementById('scoreboard-score').innerText=0
       window.requestAnimationFrame(main)
     }
 
