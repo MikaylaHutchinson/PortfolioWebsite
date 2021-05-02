@@ -123,9 +123,11 @@
       var restartRequest = new XMLHttpRequest() ;
       restartRequest.onreadystatechange = function() {
         if (this.readyState = 4 && this.status == 200) {
-
+          gameBoard=this.response
         }
       }
+      restartRequest.open('GET', 'https://mikaylahutchinson.github.io/PortfolioWebsite/projects/snake.html', true)
+      restartRequest.send()
     }
 
 
