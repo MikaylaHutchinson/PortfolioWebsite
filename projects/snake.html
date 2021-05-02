@@ -47,12 +47,13 @@
 
     <div class="snake-restart">
       <div class='lost-message'>You Lost</div>
-      <p id='score'></p>
-      <p id='highscore'></p>
+      <div id='score'></div>
+      <div id='highscore'></div>
       <button id='snake-restart-btn' type='button'>Play Again</button>
     </div>
   </body>
 
+  
   <script type='module'>
     
     import {update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
