@@ -78,6 +78,8 @@
     function main(currentTime) {
       if (gameOver) {
         restartMessage.style.display='flex'
+        return
+      }
 
 
       window.requestAnimationFrame(main)
