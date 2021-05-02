@@ -58,6 +58,7 @@ function addSegments() {
 }
 
 export function restart() {
+  const gameBoard=document.getElementById('game-board')
   restartInput()
   draw(gameBoard)
 }
