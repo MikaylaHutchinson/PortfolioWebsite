@@ -12,13 +12,13 @@ export function update() {
         expandSnake(expansionRate)
         food=getRandomFoodPosition()
         scoreCount+=1
-        document.getElementById('scoreboard-score').innerText='Score:  '+scoreCount.toString()
         if (scoreCount>highscoreCount) {
             highscoreCount+=1
             document.getElementById('scoreboard-highscore').innerText='High Score:  '+highscoreCount.toString()
         }
     }
-  }
+    document.getElementById('scoreboard-score').innerText='Score:  '+scoreCount.toString()
+}
   
 export function draw(gameBoard) {
     const foodElement = document.createElement('div')
