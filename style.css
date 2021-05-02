@@ -570,6 +570,45 @@ a {
   font-size: 13px;
 }
 
+/* snake */
+
+.snake-heading {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.snake-body {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  margin-top: 60px;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+}
+
+#game-board {
+  background-color: gray;
+  width: 60vmin;
+  height: 60vmin;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  border: 2px solid black;
+}
+
+.snake {
+  background-color: lightseagreen;
+  border: .25vmin solid black;
+}
+
+.snake-food {
+  background-color: gold;
+  border: .2vmin solid black;
+}
 
 /* hangman */
 
@@ -583,15 +622,6 @@ a {
 /* sudoku */
 
 .sudoku-heading {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 30px;
-}
-
-/* snake */
-
-.snake-heading {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   margin-top: 30px;
