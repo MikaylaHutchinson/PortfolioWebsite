@@ -614,7 +614,7 @@ a {
 .snake-start-directions {
   font-family: 'roboto condensed', sans-serif;
   position: absolute;
-  top: 200px;
+  top: 600px;
   left: 100px;
   font-size: 20px;
 }
@@ -623,7 +623,7 @@ a {
   font-family: 'roboto condensed', sans-serif;
   font-size: 20px;
   position: absolute;
-  top: 200px;
+  top: 600px;
   background-color: skyblue;
 }
 
