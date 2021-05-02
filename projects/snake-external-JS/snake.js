@@ -1,4 +1,4 @@
-import {getInputDirection} from '/portfoliowebsite/projects/snake-external-js/input.js'
+import {getInputDirection} from './input.js'
 
 export const snakeSpeed=2
 const snakeBody= [{ x: 11, y: 11}]
