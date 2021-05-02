@@ -625,7 +625,7 @@ a {
   position: absolute;
   top: 350px;
   right: 300px;
-  background-color: peachpuff;
+  background-color: tomato;
 }
 
 .snake-restart {
@@ -644,12 +644,19 @@ a {
 
 .lost-message {
   color: white;
+  margin-top: -50px;
   font-family: 'krona one', sans-serif;
+}
+
+.restart-scores {
+  font-size: 16px;
+  color: gold;
 }
 
 .snake-restart button {
   font-size: 2rem;
   font-family: "krona one", sans-serif;
+  margin-top: 20px;
   background-color: lightseagreen;
   border: none;
   border-radius: 5px;
