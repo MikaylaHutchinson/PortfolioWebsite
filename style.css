@@ -597,7 +597,7 @@ a {
   display: grid;
   grid-template-columns: repeat(21, 1fr);
   grid-template-rows: repeat(21, 1fr);
-  border: 2px solid black;
+  border: 2px solid #ccc;
 }
 
 .snake {
@@ -608,6 +608,41 @@ a {
 .snake-food {
   background-color: gold;
   border: .2vmin solid black;
+}
+
+.snake-start {
+
+}
+
+
+.snake-restart {
+  font-family: 'krona one', sans-serif;
+  position: fixed;
+  top: 99px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+.snake-restart button {
+  font-size: 2rem;
+  font-family: "krona one", sans-serif;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  padding: 0.25em 0.5em;
+}
+
+.snake-restart button:hover {
+  background-color: rgb(40, 216, 207);
 }
 
 /* hangman */

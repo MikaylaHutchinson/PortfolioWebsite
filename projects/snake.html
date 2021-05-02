@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Ubuntu:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Condensed&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="..\style.css" />
     <script src="..\main.js"></script>
   </head>
@@ -37,8 +41,15 @@
 
     </div>
 
-    <div class="snake-start"></div>
-    <div class="snake-restart"></div>
+    <div class="snake-start">
+      <p>Press Arrow Key To Start</p>
+    </div>
+    <div class="snake-restart">
+      <p>You Lost</p>
+      <p id='score'></p>
+      <p id='highscore'></p>
+      <button id='snake-restart-btn'>Play Again</button>
+    </div>
   </body>
 
   <script type='module'>
