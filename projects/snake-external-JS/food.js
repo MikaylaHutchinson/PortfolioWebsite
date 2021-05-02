@@ -36,6 +36,6 @@ function getRandomFoodPosition() {
     return newFoodPosition
 }
 
-export function restart () {
+export function restart() {
     scoreCount=0
 }
