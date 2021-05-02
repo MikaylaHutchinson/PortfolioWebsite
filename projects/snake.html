@@ -61,7 +61,7 @@
 
   <script type='module'>
     
-    import {update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
+    import {update as updateSnake, draw as drawSnake, restart as restartSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
     import {update as updateFood, draw as drawFood} from './snake-external-JS/food.js'
     import {outsideGrid} from './snake-external-JS/grid.js'
     
@@ -120,10 +120,8 @@
     }
 
     function restart() {
-      inputDirection = {x:0, y:0}
-      lastInputDirection = {x:0, y:0}
-
-      snakeBody= [{ x: 11, y: 11}]
+      restartFood()
+      restartSnake()
     }
 
 
