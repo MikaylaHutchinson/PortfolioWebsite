@@ -617,9 +617,6 @@ a {
   top: 50px;
   left: 50px;
   font-size: 20px;
-  align-self: left;
-  margin-left: 50px;
-  margin-top: 100px;
 }
 
 .snake-scoreboard {
@@ -630,7 +627,6 @@ a {
   right: 50px;
   margin-right: 50px;
   margin-top: 100px;
-  align-self: right;
 }
 
 .snake-restart {
