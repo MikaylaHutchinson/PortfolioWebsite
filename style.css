@@ -591,13 +591,13 @@ a {
 }
 
 #game-board {
-  background-color: gray;
+  background-color: #ccc;
   width: 60vmin;
   height: 60vmin;
   display: grid;
   grid-template-columns: repeat(21, 1fr);
   grid-template-rows: repeat(21, 1fr);
-  border: 2px solid #ccc;
+  border: 2px solid white;
 }
 
 .snake {
@@ -610,8 +610,12 @@ a {
   border: .2vmin solid black;
 }
 
-.snake-start {
-
+.snake-start-directions {
+  font-family: 'roboto condensed', sans-serif;
+  font-size: 20px;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 100px;
 }
 
 .snake-restart {
