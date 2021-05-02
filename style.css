@@ -625,7 +625,7 @@ a {
   position: absolute;
   top: 350px;
   right: 300px;
-  background-color: pink;
+  background-color: yellowgreen;
 }
 
 .snake-restart {
@@ -649,8 +649,8 @@ a {
 
 .restart-scores {
   font-size: 30px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 120px;
+  margin-bottom: 120px;
   font-family: 'roboto condensed', sans-serif;
   color: gold;
 }
