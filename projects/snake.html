@@ -36,13 +36,16 @@
       <div id='game-board'></div>
 
     </div>
+
+    <div class="snake-start"></div>
+    <div class="snake-restart"></div>
   </body>
 
   <script type='module'>
     
     import {update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersection} from './snake-external-JS/snake.js'
     import {update as updateFood, draw as drawFood} from './snake-external-JS/food.js'
-    import {outsideGrid} from './snake-external-js/grid.js'
+    import {outsideGrid} from './snake-external-JS/grid.js'
     
 
     let lastRenderTime=0
