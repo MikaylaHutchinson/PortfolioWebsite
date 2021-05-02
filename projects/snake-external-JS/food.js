@@ -13,6 +13,9 @@ export function update() {
         food=getRandomFoodPosition()
         scoreCount+=1
         document.getElementById('scoreboard-score').innerText=scoreCount
+        if (scoreCount>highscoreCount) {
+            document.getElementById('scoreboard-highscore').innerText=highscoreCount
+        }
     }
   }
   

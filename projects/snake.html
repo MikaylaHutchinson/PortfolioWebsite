@@ -83,7 +83,7 @@
     function main(currentTime) {
       if (gameOver) {
         score.innerText='Score:  '+document.getElementById('scoreboard-score').innerText
-        highscore.innerText='High Score:  10'
+        highscore.innerText='High Score:  '+document.getElementById('scoreboard-highscore').innerText
         restartMessage.style.display='flex'
         return
       }
