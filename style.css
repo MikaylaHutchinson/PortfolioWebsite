@@ -615,17 +615,17 @@ a {
   font-family: 'roboto condensed', sans-serif;
   position: absolute;
   top: 400px;
-  left: 12%;
+  left: 10%;
   font-size: 1.5vw;
 }
 
 .snake-scoreboard {
   font-family: 'roboto condensed', sans-serif;
-  font-size: 2.5vw;
+  font-size: 2.4vw;
   position: absolute;
   top: 350px;
   right: 14%;
-  background-color: goldenrod;
+  background-color: none;
 }
 
 .snake-restart {
