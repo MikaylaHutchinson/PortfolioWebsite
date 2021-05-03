@@ -599,6 +599,7 @@ a {
   grid-template-columns: repeat(21, 1fr);
   grid-template-rows: repeat(21, 1fr);
   border: 2px solid white;
+  box-shadow: 2px 2px 3px 2px rgb(134, 132, 132);
 }
 
 .snake {
