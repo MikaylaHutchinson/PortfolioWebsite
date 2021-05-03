@@ -621,11 +621,11 @@ a {
 
 .snake-scoreboard {
   font-family: 'roboto condensed', sans-serif;
-  font-size: 30px;
+  font-size: .30px;
   position: absolute;
   top: 350px;
   right: 200px;
-  background-color: hotpink;
+  background-color: forestgreen;
 }
 
 .snake-restart {
