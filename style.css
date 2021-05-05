@@ -309,6 +309,20 @@ a {
   display: inline;
 }
 
+.red-outline {
+  border: 1px solid red;
+}
+
+.bmi-input-error {
+  display: none;
+  position: absolute;
+  top: 500px;
+  right: 10%;
+  color: red;
+  font-family: 'times new roman', serif;
+  font-size: 1.3vw;
+}
+
 /* tic-tac-toe */
 
 :root {

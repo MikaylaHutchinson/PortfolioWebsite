@@ -67,7 +67,7 @@
           class="height-input"
           type="number"
           id="height-imp-in"
-          min="1"
+          min="0"
           max="11"
           required
         />
@@ -119,6 +119,11 @@
           value="Calculate"
         />
       </form>
+
+      <div class="bmi-input-error">
+        * You must enter a numerical input for this field
+      </div>
+
       <div id="bmi-result">
         <p>Your BMI is:</p>
         <p id="bmi"></p>

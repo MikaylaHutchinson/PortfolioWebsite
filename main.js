@@ -31,6 +31,26 @@ function metricselect() {
 }
 
 function imperialcalculate() {
+
+  if (document.getElementById('height-imp-ft').value=='') {
+    document.getElementById('height-imp-ft').classList.add('red-outline')
+    document.getElementsByClassName('bmi-input-error')[0].style.display='block'
+    return
+  }
+  document.getElementById('height-imp-ft').classList.remove('red-outline')
+
+  if (document.getElementById('height-imp-in').value=='') {
+    document.getElementById('height-imp-in').value=0
+  }
+
+  if (document.getElementById('weight-imp').value=='') {
+    document.getElementById('weight-imp').classList.add('red-outline')
+    return
+  }
+  document.getElementById('weight-imp').classList.remove('red-outline')
+  document.getElementsByClassName('bmi-input-error')[0].style.display='none'
+
+
   impInputs.style.display = "none";
   unitBtns.style.display = "none";
   var heightImp =
@@ -44,6 +64,22 @@ function imperialcalculate() {
 }
 
 function metriccalculate() {
+
+  if (document.getElementById('height-metric').value=='') {
+    document.getElementById('height-metric').classList.add('red-outline')
+    document.getElementsByClassName('bmi-input-error')[0].style.display='block'
+    return
+  }
+  document.getElementById('height-metric').classList.remove('red-outline')
+
+  if (document.getElementById('weight-metric').value=='') {
+    document.getElementById('weight-metric').classList.add('red-outline')
+    return
+  }
+  document.getElementById('weight-metric').classList.remove('red-outline')
+  document.getElementsByClassName('bmi-input-error')[0].style.display='none'
+
+
   metricInputs.style.display = "none";
   unitBtns.style.display = "none";
   var heightMetric = document.getElementById("height-metric").value;
