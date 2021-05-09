@@ -101,6 +101,10 @@
 
     chooseOperation(operation) {
       if(this.current==='') return
+      if(operation=='%'){
+        this.current=0.01*parseFloat(this.current)
+        return
+      }
       if(this.previous!==''){
         this.compute()
       }
