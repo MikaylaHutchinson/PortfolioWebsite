@@ -696,7 +696,10 @@ a {
 }
 
 .hangman-playerbtns {
-  
+  text-align: center;
+  font-family: helvetica;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 /* sudoku */
