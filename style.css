@@ -697,10 +697,15 @@ a {
 
 .hangman-playerbtns {
   text-align: center;
-  font-family: helvetica;
   margin-top: 80px;
   margin-bottom: 50px;
 }
+
+.hangman-1player {
+  font-family: helvetica;}
+
+.hangman-2players {
+  font-family: helvetica;}
 
 /* sudoku */
 
