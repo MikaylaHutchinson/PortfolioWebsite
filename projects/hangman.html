@@ -35,9 +35,11 @@
 
       <div class="hangman-playerbtns">
         <button 
+          onclick="oneplayerselect()"
           class='hangman-1player' 
           type='button'
-          name='singleplayer'>
+          name='singleplayer'
+          >
           1 Player
         </button>
 
@@ -49,6 +51,50 @@
         </button>
       </div>
 
+      <div class="hangman-choosecategory">
+        Choose a Category
+      </div>
+
+      <div class="hangman-categoriescontainer">
+        <div class="hangman-categories">
+
+          <div class="hangman-moviebtndiv">
+            <button
+              class="hangman-moviebtn"
+              type="button">
+              Movies
+            </button>
+          </div>
+
+          <div class="hangman-bookbtndiv">
+            <button
+              class="hangman-bookbtn"
+              type="button">
+              Books
+            </button>
+          </div>  
+
+          <div class="hangman-songbtndiv">
+            <button
+              class="hangman-songbtn"
+              type="button">
+              Songs
+            </button>
+          </div>
+
+          <div class="hangman-phrasebtndiv">
+            <button
+              class="hangman-phrasebtn"
+              type="button">
+              Phrases
+            </button>
+          </div>  
+
+        </div>
+      </div>
+
     </div>
+
+    <script src=".\hangman.js"></script>
   </body>
 </html>

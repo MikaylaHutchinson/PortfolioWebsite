@@ -702,10 +702,52 @@ a {
 }
 
 .hangman-1player {
+  display:
   font-family: helvetica;}
 
 .hangman-2players {
   font-family: helvetica;}
+
+
+.hangman-choosecategory {
+  font-family: 'roboto condensed', sans-serif;
+  position: absolute;
+  top: 320px;
+  left: 44%;
+  font-size: 1.4vw;
+}
+
+.hangman-categoriescontainer {
+  display: block;
+  position: absolute;
+  top: 380px;
+  left: 28%   ;
+}
+
+.hangman-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hangman-moviebtn,.hangman-songbtn,.hangman-bookbtn,.hangman-phrasebtn {
+  width: 200px;
+  height: 100px;
+  margin-top: none;
+  margin-bottom: 60px;
+  margin-left: 90px;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: lato, sans-serif;
+  color: white;
+  background-color: lightseagreen;
+}
+
+.hangman-moviebtn:hover,.hangman-songbtn:hover,.hangman-bookbtn:hover,.hangman-phrasebtn:hover {
+  background-color: rgb(40, 216, 207);
+}
+
 
 /* sudoku */
 
