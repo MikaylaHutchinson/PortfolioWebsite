@@ -697,22 +697,32 @@ a {
 
 .hangman-playerbtns {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
-.hangman-1player {
-  display:
-  font-family: helvetica;}
+.hangman-1player, .hangman-2players {
+  font-family: rubik;
+  font-size: 20px;
+  width: 140px;
+  height: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: lightseagreen;}
 
-.hangman-2players {
-  font-family: helvetica;}
+  .hangman-1player:hover, .hangman-2players:hover {
+    background-color: rgb(40, 216, 207);
+  }
 
 
 .hangman-choosecategory {
-  font-family: 'roboto condensed', sans-serif;
+  font-family: 'rubik', sans-serif;
   position: absolute;
-  top: 320px;
+  top: 340px;
   left: 44%;
   font-size: 1.4vw;
 }
@@ -720,8 +730,8 @@ a {
 .hangman-categoriescontainer {
   display: block;
   position: absolute;
-  top: 380px;
-  left: 28%   ;
+  top: 420px;
+  left: 31%   ;
 }
 
 .hangman-categories {
@@ -730,13 +740,13 @@ a {
 }
 
 .hangman-moviebtn,.hangman-songbtn,.hangman-bookbtn,.hangman-phrasebtn {
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 80px;
   margin-top: none;
-  margin-bottom: 60px;
-  margin-left: 90px;
+  margin-bottom: 50px;
+  margin-left: 80px;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   font-size: 24px;
   font-weight: bold;
   font-family: lato, sans-serif;
@@ -746,6 +756,15 @@ a {
 
 .hangman-moviebtn:hover,.hangman-songbtn:hover,.hangman-bookbtn:hover,.hangman-phrasebtn:hover {
   background-color: rgb(40, 216, 207);
+}
+
+.hangman-movieinstructions, .hangman-songinstructions, .hangman-bookinstructions, .hangman-phraseinstructions {
+  display: block;
+  margin: auto;
+  width: 400px;
+  text-align: center;
+  font-family: lato, sans-serif;
+  font-size: 18px;
 }
 
 

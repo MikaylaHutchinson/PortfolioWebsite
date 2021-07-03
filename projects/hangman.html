@@ -61,7 +61,8 @@
           <div class="hangman-moviebtndiv">
             <button
               class="hangman-moviebtn"
-              type="button">
+              type="button"
+              onclick="movieselect()">
               Movies
             </button>
           </div>
@@ -69,7 +70,8 @@
           <div class="hangman-bookbtndiv">
             <button
               class="hangman-bookbtn"
-              type="button">
+              type="button"
+              onclick="bookselect()">
               Books
             </button>
           </div>  
@@ -77,7 +79,8 @@
           <div class="hangman-songbtndiv">
             <button
               class="hangman-songbtn"
-              type="button">
+              type="button"
+              onclick="songselect()">
               Songs
             </button>
           </div>
@@ -85,7 +88,8 @@
           <div class="hangman-phrasebtndiv">
             <button
               class="hangman-phrasebtn"
-              type="button">
+              type="button"
+              onclick="phraseselect()">
               Phrases
             </button>
           </div>  
@@ -93,8 +97,22 @@
         </div>
       </div>
 
-    </div>
+      <div class="hangman-instructions">
+        <div class="hangman-movieinstructions">
+          Try to guess the movie title 
+        </div>
+        <div class="hangman-bookinstructions">
+          Try to guess the book title 
+        </div>
+        <div class="hangman-songinstructions">
+          Try to guess the song name 
+        </div>
+        <div class="hangman-phraseinstructions">
+          Try to guess the common phrase 
+        </div>
+      </div>
 
+    </div>
     <script src=".\hangman.js"></script>
   </body>
 </html>
