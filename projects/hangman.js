@@ -51,3 +51,15 @@ function phraseselect() {
     chooseCat.style.display = 'none';
     phraseinstructions.style.display = 'block';
 }
+
+
+var canvas = document.getElementById('hangman-canvas');
+var ctx = canvas.getContext('2d');
+
+    ctx.moveTo(20,280);
+    ctx.lineTo(260,280);
+    ctx.stroke();
+
+    ctx.fillRect(50,30,6,250)
+
+    ctx.fillRect(50,30,130,6)

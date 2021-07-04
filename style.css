@@ -219,7 +219,7 @@ a {
 .bmi-heading {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: none;
   font-size: 30px;
 }
 
@@ -333,7 +333,7 @@ a {
 .tic-heading {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: none;
   font-size: 30px;
 }
 
@@ -484,7 +484,7 @@ a {
 .calc-heading {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: none;
   font-size: 30px;
 }
 
@@ -495,6 +495,7 @@ a {
   font-family: 'rubik', sans-serif;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 50px;
   top: 10px;
   position: relative;
   border-radius: 10px;
@@ -589,7 +590,7 @@ a {
 .snake-heading {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: none;
   font-size: 30px;
 }
 
@@ -691,7 +692,7 @@ a {
 .hangman-heading {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: none;
   font-size: 30px;
 }
 
@@ -758,6 +759,14 @@ a {
   background-color: rgb(40, 216, 207);
 }
 
+.hangman-canvas {
+  text-align: center;
+}
+
+#hangman-canvas {
+  border:none;
+}
+
 .hangman-movieinstructions, .hangman-songinstructions, .hangman-bookinstructions, .hangman-phraseinstructions {
   display: block;
   margin: auto;
@@ -773,6 +782,6 @@ a {
 .sudoku-heading {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: none;
   font-size: 30px;
 }
