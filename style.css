@@ -764,7 +764,7 @@ a {
 }
 
 #hangman-canvas {
-  border:none;
+  border: none;
 }
 
 .hangman-movieinstructions, .hangman-songinstructions, .hangman-bookinstructions, .hangman-phraseinstructions {
